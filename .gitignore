@@ -1,0 +1,39 @@
+# Logs
+my-app/logs
+my-app/*.log
+my-app/npm-debug.log*
+my-app/yarn-debug.log*
+my-app/yarn-error.log*
+my-app/pnpm-debug.log*
+my-app/lerna-debug.log*
+
+my-app/node_modules
+my-app/.DS_Store
+my-app/dist
+my-app/dist-ssr
+my-app/coverage
+my-app/*.local
+
+my-app/cypress/videos/
+my-app/cypress/screenshots/
+
+# Editor directories and files
+my-app/.vscode/*
+my-app/!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+*storybook.log
+
+# vim
+*~
+
+# asset 
+design
+images

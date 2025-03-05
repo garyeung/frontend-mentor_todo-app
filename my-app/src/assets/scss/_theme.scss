@@ -1,0 +1,12 @@
+.app {
+  font-family: $font-family;
+  font-size: $font-size--base;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+  background-color: $light--very-light-gray;
+
+  &.app--dark {
+    // Dark mode root styles
+    background-color: $dark--very-dark-blue;
+  }
+}
