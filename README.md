@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Todo App Solution](https://github.com/garyeung/todo-app)
-- Live Site URL: [Todo App Live](https://your-live-site-url.com)
+- Live Site URL: [Todo App Live](https://frontend-mentortodo-feawm5vi6-garyeungs-projects.vercel.app/)
 
 ## My process
 
@@ -60,7 +60,7 @@ Learn a lot by using Vue
 
 
 ### Continued development
-implement Drag and drop function
+implement Drag and drop function  
 using localStorage or something local store to memorized the todo
 
 ### Useful resources
