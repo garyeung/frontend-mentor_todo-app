@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Todo App Solution](https://github.com/garyeung/todo-app)
-- Live Site URL: [Todo App Live](https://frontend-mentortodo-feawm5vi6-garyeungs-projects.vercel.app/)
+- Live Site URL: [Todo App Live](https://frontend-mentortodo-app.vercel.app/)
 
 ## My process
 
