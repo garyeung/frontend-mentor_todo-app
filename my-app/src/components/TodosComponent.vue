@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import TodoCreater from './TodoCreater.vue'
 import TodoFilter from './TodoFilter.vue'
 import TodoItem, { type Todo } from './TodoItem.vue'
@@ -12,6 +12,22 @@ import { useRoute } from 'vue-router'
 const todos = ref<Todo[]>([])
 const isDarkMode = ref(false)
 const route = useRoute()
+
+onMounted(() => {
+  try {
+    const savedTodos = localStorage.getItem('todos')
+    if (savedTodos) {
+      todos.value = JSON.parse(savedTodos);
+    }
+  } catch (err) {
+    console.error("Failed to load todos from localStorage", err)
+    todos.value = []
+  }
+})
+
+watch(todos, (newTodos) => {
+  localStorage.setItem('todos', JSON.stringify(newTodos))
+}, {deep: true})
 
 function toggleLightMode() {
   isDarkMode.value = !isDarkMode.value
