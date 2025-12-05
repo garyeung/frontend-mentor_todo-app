@@ -1,12 +1,14 @@
+@use "variables";
+
 .app {
-  font-family: $font-family;
-  font-size: $font-size--base;
+  font-family: variables.$font-family;
+  font-size: variables.$font-size--base;
   min-height: 100vh;
   transition: background-color 0.3s ease;
-  background-color: $light--very-light-gray;
+  background-color: variables.$light--very-light-gray;
 
   &.app--dark {
     // Dark mode root styles
-    background-color: $dark--very-dark-blue;
+    background-color: variables.$dark--very-dark-blue;
   }
 }
